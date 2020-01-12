@@ -2,14 +2,14 @@ import React from 'react';
 import Episode from './Episode';
 import { IEpisode } from './../interfaces';
 
-function Episodes({ episodes }): JSX.Element {
+const Episodes = ({ episodes, favorites, dispatch }): JSX.Element => {
 	return (
 		<ul className="episode-layout">
 			{episodes.map((episode: IEpisode) => (
-				<Episode key={episode.id} episode={episode} />
+				<Episode key={episode.id} episode={episode} dispatch={dispatch} favorites={favorites} />
 			))}
 		</ul>
 	);
-}
+};
 
 export default Episodes;
