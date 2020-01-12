@@ -1,0 +1,2 @@
+export const FETCH_EPISODES = 'FETCH_EPISODES';
+export const ADD_FAVORITES = 'ADD_FAVORITES';
